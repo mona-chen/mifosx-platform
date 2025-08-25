@@ -31,7 +31,7 @@ services:
       timeout: 10s
       retries: 10
     ports:
-      - "5432:5432"
+      - "5438:5432"
   # Backend service
   fineract-server:
     image: openmf/fineract:${TAG}
