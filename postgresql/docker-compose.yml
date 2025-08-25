@@ -31,7 +31,7 @@ services:
     #   - ./fineract-db/docker/postgresql.env
       # - ./.env
     healthcheck:
-      test: [ "CMD", "pg_isready", "-q", "-d", "postgres", "-U", "root" ]
+      test: [ "CMD", "pg_isready", "-q", "-d", "postgres", "-U", "postgres" ]
       timeout: 10s
       retries: 10
     ports:
